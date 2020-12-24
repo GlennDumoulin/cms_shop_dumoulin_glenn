@@ -1,7 +1,7 @@
 /*
 Theme Name: HoliDeco
 Author: Glenn Dumoulin
-Description: Webshop with all kinds of decorations for sale
+Description: Webshop with all kinds of decorations for different holidays
 Version: 0.1
 Requires at least: 5.0
 Tested up to: 5.6
@@ -10,3 +10,67 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: holideco
 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+div {
+    margin-bottom: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 85%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p,
+a,
+li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
