@@ -6,7 +6,7 @@
 body {
     overflow-x: hidden;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-roboto;
 }
 
 div {
@@ -46,23 +46,16 @@ li {
 }
 
 a {
-    display: block;
+    color: $color-black;
+    display: inline-block;
     text-decoration: none;
+    transition: $transition-basic;
+    &:hover {
+        color: $color-green;
+        text-decoration: underline;
+    }
 }
 
-.btn {
-    color: white;
-    background-color: #0cb04a;
-    width: fit-content;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: 1px solid white;
-    border-radius: 0 15px 0 15px;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn:hover {
-    color: white;
-    background-color: #c72121;
-    border-radius: 0;
+.hidden {
+    display: none;
 }

@@ -10964,25 +10964,35 @@ li {
 }
 
 a {
-  display: block;
+  color: #000;
+  display: inline-block;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #0cb04a;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn {
-  color: white;
+  color: #fff;
   background-color: #0cb04a;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 20px;
   margin-top: 10px;
-  border: 1px solid white;
   border-radius: 0 15px 0 15px;
   transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  color: white;
+  color: #fff;
   background-color: #c72121;
   border-radius: 0;
 }
