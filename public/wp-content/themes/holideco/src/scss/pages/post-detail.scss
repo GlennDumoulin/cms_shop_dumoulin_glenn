@@ -1,0 +1,18 @@
+.post {
+    &-info {
+        margin-bottom: 30px;
+        &--item {
+            margin-bottom: 20px;
+        }
+        &--img {
+            img {
+                box-shadow: 5px 7px 5px 2px $color-black--60;
+            }
+        }
+    }
+    &-content {
+        h2 {
+            margin: 30px 0 15px;
+        }
+    }
+}
