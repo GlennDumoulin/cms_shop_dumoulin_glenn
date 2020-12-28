@@ -9,22 +9,27 @@
                 <div class="col-6">
                     <div class="card">
                         <a href="<?php the_permalink(); ?>">
-                            <h2>
-                                <?php the_title() ?>
-                            </h2>
-                            <?php
-                                if (has_excerpt()) {
-                                    the_excerpt();
-                                } else {
-                                    echo '<p>' . wp_trim_words(get_the_content(), 20) . '</p>';
-                                }
-                            ?>
+                            <div class="card-img">
+                                <img src="https://picsum.photos/200/100" />
+                            </div>
+                            <div class="card-content">
+                                <h2>
+                                    <?php the_title() ?>
+                                </h2>
+                                <?php
+                                    if (has_excerpt()) {
+                                        the_excerpt();
+                                    } else {
+                                        echo '<p>' . wp_trim_words(get_the_content(), 20) . '</p>';
+                                    }
+                                ?>
+                            </div>
+                            <div class="card-author">
+                                <em class="author">
+                                    Geschreven door: <?php the_author() ?>
+                                </em>
+                            </div>
                         </a>
-                        <div>
-                            <em class="author">
-                                Geschreven door: <?php the_author_posts_link() ?>
-                            </em>
-                        </div>
                     </div>
                 </div>
             <?php }

@@ -1,15 +1,17 @@
 .card {
     background-color: $color-grey;
     margin-bottom: 30px;
-    padding: 20px;
     border: 3px solid $color-grey;
     border-radius: 0;
     box-shadow: 5px 7px 5px 2px $color-black--60;
     transition: $transition-basic;
-    & h2 {
-        color: $color-green;
-        text-shadow: 2px 1px 1px $color-black--60;
-        transition: $transition-basic;
+    &-content {
+        padding: 20px 20px 0;
+        & h2 {
+            color: $color-green;
+            text-shadow: 2px 1px 1px $color-black--60;
+            transition: $transition-basic;
+        }
     }
     &:hover {
         border-color: $color-red;
@@ -22,10 +24,13 @@
         color: $color-black;
         text-decoration: none;
     }
-    .author {
-        font-size: 0.8rem;
-        a {
+    &-author {
+        padding: 0 20px;
+        .author {
             font-size: 0.8rem;
+            a {
+                font-size: 0.8rem;
+            }
         }
     }
 }
