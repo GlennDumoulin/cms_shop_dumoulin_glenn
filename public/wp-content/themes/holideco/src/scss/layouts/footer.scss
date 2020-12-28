@@ -1,0 +1,30 @@
+footer {
+    background-color: $color-green;
+    .footer-content {
+        padding: 20px 0;
+        h1 {
+            margin-bottom: 10px;
+        }
+        a {
+            color: $color-white;
+            &:hover {
+                color: $color-red;
+                text-decoration: none;
+            }
+        }
+        .navigation {
+            display: block;
+        }
+    }
+    .legal {
+        background-color: $color-white;
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+        p {
+            &:not(:last-of-type) {
+                margin-right: 30px;
+            }
+        }
+    }
+}

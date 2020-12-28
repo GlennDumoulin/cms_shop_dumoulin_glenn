@@ -3,8 +3,8 @@
 function registerMenuLocations()
 {
     register_nav_menus(array(
-        'Header-nav' => 'Header Menu',
-        'Footer-nav' => 'Footer Menu',
+        'header-nav' => 'Header Menu',
+        'footer-nav' => 'Footer Menu',
     ));
 }
 
