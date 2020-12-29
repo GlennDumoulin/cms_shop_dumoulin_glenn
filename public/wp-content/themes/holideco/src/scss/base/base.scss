@@ -101,6 +101,17 @@ section {
     padding: 0;
 }
 
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    a {
+        &:not(:last-of-type) {
+            margin-right: 50px;
+        }
+    }
+}
+
 .hidden {
     display: none;
 }

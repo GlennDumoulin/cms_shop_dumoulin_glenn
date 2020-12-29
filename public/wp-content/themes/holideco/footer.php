@@ -33,5 +33,8 @@
                 <p class="small">Made by Glenn Dumoulin</p>
             </div>
         </footer>
+        <script>
+            feather.replace();
+        </script>
     </body>
 </html>

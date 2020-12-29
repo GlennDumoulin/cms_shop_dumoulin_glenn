@@ -11023,6 +11023,16 @@ section:not(:last-of-type) {
   padding: 0;
 }
 
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a:not(:last-of-type) {
+  margin-right: 50px;
+}
+
 .hidden {
   display: none;
 }
@@ -11045,8 +11055,45 @@ section:not(:last-of-type) {
   border-radius: 0;
 }
 
+.pagination a {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 2px solid #0cb04a;
+  border-radius: 10px;
+}
+
+.pagination a svg.feather-chevron-left {
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination a svg.feather-chevron-right {
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination a:hover {
+  background-color: #eaeaea;
+  border-color: #c72121;
+  color: #c72121;
+  text-decoration: none;
+}
+
+.pagination a:hover svg.feather-chevron-left {
+  margin-right: 10px;
+  stroke: #c72121;
+}
+
+.pagination a:hover svg.feather-chevron-right {
+  margin-left: 10px;
+  stroke: #c72121;
+}
+
 .card {
   background-color: #eaeaea;
+  position: relative;
+  min-height: 450px;
   margin-top: 30px;
   border: 3px solid #eaeaea;
   border-radius: 0;
@@ -11079,6 +11126,8 @@ section:not(:last-of-type) {
 }
 
 .card-author {
+  position: absolute;
+  bottom: 20px;
   padding: 0 20px;
 }
 
@@ -11129,7 +11178,7 @@ header .navigation {
 }
 
 header .navigation .custom-logo-link {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 
@@ -11143,7 +11192,7 @@ header .navigation ul li {
 }
 
 header .navigation ul li:not(:first-of-type) {
-  margin-left: 1.5rem;
+  margin-left: 50px;
 }
 
 footer {
@@ -11189,6 +11238,10 @@ footer .legal p:not(:last-of-type) {
 
 .page--home section .recent-posts {
   margin-bottom: 10px;
+}
+
+.page--nieuws h1 {
+  margin-bottom: 0;
 }
 
 .post-info {

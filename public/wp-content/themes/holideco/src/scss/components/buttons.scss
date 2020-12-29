@@ -12,3 +12,35 @@
         border-radius: 0;
     }
 }
+
+.pagination {
+    a {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        border: 2px solid $color-green;
+        border-radius: 10px;
+        svg.feather-chevron-left {
+            margin-right: 5px;
+            transition: $transition-basic;
+        }
+        svg.feather-chevron-right {
+            margin-left: 5px;
+            transition: $transition-basic;
+        }
+        &:hover {
+            background-color: $color-grey;
+            border-color: $color-red;
+            color: $color-red;
+            text-decoration: none;
+            svg.feather-chevron-left {
+                margin-right: 10px;
+                stroke: $color-red;
+            }
+            svg.feather-chevron-right {
+                margin-left: 10px;
+                stroke: $color-red;
+            }
+        }
+    }
+}
