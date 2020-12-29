@@ -10930,6 +10930,9 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -11012,12 +11015,16 @@ span {
   padding: 5px 10px;
 }
 
-.hidden {
-  display: none;
+section:not(:last-of-type) {
+  margin-bottom: 50px;
 }
 
-.content-block {
-  margin-bottom: 50px;
+.container {
+  padding: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn {
@@ -11141,6 +11148,7 @@ header .navigation ul li:not(:first-of-type) {
 
 footer {
   background-color: #0cb04a;
+  margin-top: auto;
 }
 
 footer .footer-content {

@@ -1,7 +1,7 @@
         </main>
         <footer>
-            <div class="container footer-content">
-                <div class="row">
+            <div class="container">
+                <div class="row footer-content">
                     <div class="col-lg-3 col-md-6 col-12 contact-info">
                         <h1>HoliDeco</h1>
                         <a href="mailto:info@holideco.com">info@holideco.com</a>
