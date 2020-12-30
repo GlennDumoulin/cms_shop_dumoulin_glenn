@@ -11143,6 +11143,34 @@ section:not(:last-of-type) {
   font-size: 0.8rem;
 }
 
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+}
+
+.hero-content h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -11246,6 +11274,10 @@ footer .legal p:not(:last-of-type) {
 
 .page--nieuws h1 {
   margin-bottom: 0;
+}
+
+.page--over-ons {
+  margin-top: -50px;
 }
 
 .post-info {

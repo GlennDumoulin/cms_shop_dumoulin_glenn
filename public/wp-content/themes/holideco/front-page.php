@@ -5,7 +5,7 @@
     <section>
         <h1>Recente posts</h1>
         <div class="row recent-posts">
-            <?php get_template_part( 'components/cards', null, array(
+            <?php get_template_part('components/cards', null, array(
                 'type' => 'post',
                 'amount' => '2',
             )) ?>
