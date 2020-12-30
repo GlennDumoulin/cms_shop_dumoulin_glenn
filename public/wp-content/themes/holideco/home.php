@@ -9,7 +9,7 @@
                     <div class="card">
                         <a href="<?php the_permalink(); ?>">
                             <div class="card-img">
-                                <img src="https://picsum.photos/200/100" />
+                                <?php the_post_thumbnail('medium_large'); ?>
                             </div>
                             <div class="card-content">
                                 <h2>

@@ -1,12 +1,15 @@
 .card {
     background-color: $color-grey;
     position: relative;
-    min-height: 450px;
+    min-height: 425px;
     margin-top: 30px;
     border: 3px solid $color-grey;
     border-radius: 0;
     box-shadow: 5px 7px 5px 2px $color-black--60;
     transition: $transition-basic;
+    &-img {
+        height: 250px;
+    }
     &-content {
         padding: 20px 20px 0;
         & h2 {

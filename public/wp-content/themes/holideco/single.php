@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="col-6 post-info--img">
-            <img src="https://picsum.photos/300/200" />
+            <?php the_post_thumbnail('large'); ?>
         </div>
     </div>
     <div class="post-content"><?php the_content(); ?></div>
