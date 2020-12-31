@@ -11055,6 +11055,17 @@ section:not(:last-of-type) {
   border-radius: 0;
 }
 
+.btn.opacity {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #fff;
+}
+
+.btn.opacity:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+
 .pagination a {
   display: flex;
   align-items: center;
@@ -11145,11 +11156,10 @@ section:not(:last-of-type) {
 
 .content-row {
   align-items: center;
-  margin: 50px 0;
 }
 
-.content-row:last-of-type {
-  margin-bottom: 0;
+.content-row:not(:last-of-type) {
+  margin-bottom: 50px;
 }
 
 .content-row .image {
@@ -11176,6 +11186,8 @@ section:not(:last-of-type) {
   position: relative;
   width: 100%;
   height: 500px;
+  margin-top: -50px;
+  margin-bottom: 50px;
 }
 
 .hero .overlay {
@@ -11294,6 +11306,10 @@ footer .legal p:not(:last-of-type) {
   margin-right: 30px;
 }
 
+.page--contact a {
+  font-weight: 700;
+}
+
 .page--home section h1 {
   margin-bottom: 0;
 }
@@ -11304,10 +11320,6 @@ footer .legal p:not(:last-of-type) {
 
 .page--nieuws h1 {
   margin-bottom: 0;
-}
-
-.page--over-ons {
-  margin-top: -50px;
 }
 
 .post-info {
