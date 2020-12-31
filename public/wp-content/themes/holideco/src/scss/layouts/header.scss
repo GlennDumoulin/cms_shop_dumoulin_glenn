@@ -16,6 +16,9 @@ header {
                 &:not(:first-of-type) {
                     margin-left: 50px;
                 }
+                a {
+                    font-size: 1.2rem;
+                }
             }
         }
     }

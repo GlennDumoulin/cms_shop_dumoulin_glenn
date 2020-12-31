@@ -7,22 +7,21 @@
 
     <div class="container">
         <?php if (have_rows('row')) {
-            while (have_rows('row')) {
-                the_row();
-    
+            while (have_rows('row')) { the_row();
                 $image= get_sub_field('image');
                 $title= get_sub_field('title');
                 $desc= get_sub_field('description');
-                $align= get_sub_field('align'); ?>
-    
-            <div class="row <?php echo $align ?>">
-                <div class="col-6 image">
+                $align= get_sub_field('align');
+            ?>
+
+            <div class="row content-row <?php echo $align ?>">
+                <div class="col-md-6 col-12 image">
                     <?php if (!empty($image)) {
                         echo wp_get_attachment_image( $image, $size );
                     } ?>
                 </div>
-    
-                <div class="col-6">
+
+                <div class="col-md-6 col-12">
                     <?php if ($title) {
                         echo '<h2>'. $title . '</h2>';
                     } ?>
@@ -31,9 +30,8 @@
                     } ?>
                 </div>
             </div>
-            <?php
-            }
-        }?>
+            <?php }
+        } ?>
     </div>
 </div>
 
