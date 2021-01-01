@@ -11306,6 +11306,10 @@ footer .legal p:not(:last-of-type) {
   margin-right: 30px;
 }
 
+.page--archive h1 {
+  margin-bottom: 0;
+}
+
 .page--contact a {
   font-weight: 700;
 }

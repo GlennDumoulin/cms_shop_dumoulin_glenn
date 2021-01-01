@@ -1,18 +1,8 @@
 <?php get_header(); ?>
 
 <div class="container page--archive">
-    <h1>Archive: 
-        <?php
-            if (is_author()) {
-                the_author();
-            } elseif (is_category()) {
-                single_cat_title();
-            } elseif (is_tag()) {
-                single_tag_title();
-            } else {
-                echo 'Oops hier ging iets mis!';
-            }
-        ?>
+    <h1>
+        Tag: <?php single_tag_title(); ?>
     </h1>
     <div class="row posts">
         <?php

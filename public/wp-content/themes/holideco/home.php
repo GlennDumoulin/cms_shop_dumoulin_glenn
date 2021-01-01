@@ -3,8 +3,8 @@
 <div class="container page--nieuws">
     <h1>Nieuws</h1>
     <div class="row posts">
-    <?php
-        while (have_posts()) { the_post() ?>
+        <?php
+            while (have_posts()) { the_post() ?>
                 <div class="col-6">
                     <div class="card">
                         <a href="<?php the_permalink(); ?>">
@@ -31,13 +31,13 @@
                         </a>
                     </div>
                 </div>
-        <?php }
-    ?>
+            <?php }
+        ?>
     </div>
-    <div class="pagination">
-        <?php previous_posts_link('<i data-feather="chevron-left"></i> Recentere posts') ?>
-        <?php next_posts_link('Oudere posts <i data-feather="chevron-right"></i>') ?>
-    </div>
+    <?php get_template_part('components/pagination', null, array(
+        'previous_label' => 'Recentere posts',
+        'next_label' => 'Oudere posts',
+    )) ?>
 </div>
 
 <?php get_footer(); ?>
