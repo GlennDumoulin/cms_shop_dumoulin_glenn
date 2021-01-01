@@ -8,14 +8,14 @@
             </h1>
             <div class="post-info--item">
                 <h4>Autheur</h4>
-                <span><?php the_author_posts_link(); ?></span>
+                <?php the_author_posts_link(); ?>
             </div>
             <div class="post-info--item">
                 <h4>Categorieën</h4>
                 <?php 
-                    if (!has_category('Uncategorized')) { ?>
-                        <span><?php the_category(', '); ?></span>
-                    <?php }
+                    if (!has_category('Uncategorized')) {
+                        the_category(null);
+                    }
                     else { ?>
                         <span>Geen categorieën</span>
                     <?php }
@@ -25,7 +25,7 @@
                 <h4>Tags</h4>
                 <?php 
                     if (has_tag()) {
-                        the_tags('<span>', ', ','</span>');
+                        the_tags('', null, '');
                     }
                     else { ?>
                         <span>Geen tags</span>

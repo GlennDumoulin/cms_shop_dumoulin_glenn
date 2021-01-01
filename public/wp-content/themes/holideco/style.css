@@ -11008,13 +11008,6 @@ img {
   height: 100%;
 }
 
-span {
-  background-color: #eaeaea;
-  border: 1px solid #0cb04a;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-
 section:not(:last-of-type) {
   margin-bottom: 50px;
 }
@@ -11334,11 +11327,26 @@ footer .legal p:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
+.post-info--item a {
+  background-color: #eaeaea;
+  border: 1px solid #0cb04a;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.post-info--item a:not(:last-of-type) {
+  margin-right: 7px;
+}
+
 .post-info--img img {
   box-shadow: 5px 7px 5px 2px rgba(0, 0, 0, 0.6);
 }
 
 .post-content h2 {
-  margin: 30px 0 15px;
+  margin: 30px 0 20px;
+}
+
+.post-content p {
+  margin-bottom: 10px;
 }
 

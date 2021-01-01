@@ -84,13 +84,6 @@ img {
     height: 100%;
 }
 
-span {
-    background-color: $color-grey;
-    border: 1px solid $color-green;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
 section {
     &:not(:last-of-type) {
         margin-bottom: 50px;
