@@ -1,0 +1,41 @@
+form {
+    label,
+    input,
+    textarea {
+        width: 100%;
+    }
+    label {
+        &:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+    }
+    input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid $color-black;
+        padding: 5px;
+        &.bg-green {
+            color: $color-white;
+            border-bottom-color: $color-red--60;
+            &::placeholder {
+                color: $color-white--60;
+            }
+        }
+    }
+    textarea {
+        border: 2px solid $color-black;
+        padding: 5px 10px;
+    }
+    &.sent {
+        .wpcf7-response-output {
+            border-color: $color-green;
+            background-color: $color-white;
+        }
+    }
+    &.failed {
+        .wpcf7-response-output {
+            border-color: $color-red;
+            background-color: $color-white;
+        }
+    }
+}

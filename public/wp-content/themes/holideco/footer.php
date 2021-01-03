@@ -20,11 +20,11 @@
                             )) ?>
                     </nav>
                     <div class="col-lg-6 col-md-12 newsletter">
-                        <!-- <?php if (is_active_sidebar( 'footer-form' )) { ?>
+                        <?php if (is_active_sidebar( 'footer-form' )) { ?>
                             <aside class="widget-area" role="complementary">
                                 <?php dynamic_sidebar( 'footer-form' ); ?>
                             </aside>
-                        <?php } ?> -->
+                        <?php } ?>
                     </div>
                 </div>
             </div>
