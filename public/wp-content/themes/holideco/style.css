@@ -11178,7 +11178,7 @@ form textarea {
   width: 100%;
 }
 
-form label:not(:last-of-type) {
+form label {
   margin-bottom: 20px;
 }
 
@@ -11249,6 +11249,44 @@ form.failed .wpcf7-response-output {
 .hero-content h2 {
   color: #fff;
   font-size: 2rem;
+}
+
+.hero-webshop .textwidget,
+.hero-galerij .textwidget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: -50px 0;
+}
+
+.hero-webshop .textwidget .overlay,
+.hero-galerij .textwidget .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-webshop .textwidget-content,
+.hero-galerij .textwidget-content {
+  text-align: center;
+  position: absolute;
+}
+
+.hero-webshop .textwidget-content h2,
+.hero-galerij .textwidget-content h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.hero-galerij .textwidget {
+  margin-top: 50px;
+  margin-bottom: -50px;
 }
 
 .navigation {
@@ -11362,6 +11400,29 @@ footer .legal p:not(:last-of-type) {
 
 .page--home section h1 {
   margin-bottom: 0;
+}
+
+.page--home section h2 {
+  margin-top: 20px;
+}
+
+.page--home section .collection-buttons a:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.page--home section .section-info {
+  background-color: #0cb04a;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.page--home section .section-info h2 {
+  color: #fff;
+}
+
+.page--home section .section-image {
+  background-color: #eaeaea;
+  padding: 30px;
 }
 
 .page--home section .recent-posts {

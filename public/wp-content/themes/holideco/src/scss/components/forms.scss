@@ -5,9 +5,7 @@ form {
         width: 100%;
     }
     label {
-        &:not(:last-of-type) {
-            margin-bottom: 20px;
-        }
+        margin-bottom: 20px;
     }
     input {
         background-color: transparent;
