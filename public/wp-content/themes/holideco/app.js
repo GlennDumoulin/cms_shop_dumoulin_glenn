@@ -90,10 +90,31 @@
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _open_event_detail__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./open-event-detail */ "./src/js/open-event-detail.js");
+/* harmony import */ var _open_event_detail__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_open_event_detail__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/***/ }),
+
+/***/ "./src/js/open-event-detail.js":
+/*!*************************************!*\
+  !*** ./src/js/open-event-detail.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// alert('Welkom bij HoliDeco');
+var eventButtons = document.querySelectorAll(".event-btn");
+var eventContentContainers = document.querySelectorAll(".event-content-container");
+eventButtons.forEach(function (btn, i) {
+  btn.addEventListener("click", function () {
+    eventContentContainers[i].classList.toggle("visible");
+  });
+});
 
 /***/ }),
 

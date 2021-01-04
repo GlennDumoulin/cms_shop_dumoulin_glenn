@@ -3,7 +3,7 @@
         h1 {
             margin-bottom: 0;
         }
-        h2 {
+        > h2 {
             margin-top: 20px;
         }
         .collection-buttons {
@@ -27,8 +27,11 @@
                 padding: 30px;
             }
         }
-        .recent-posts {
-            margin-bottom: 10px;
+        .recent {
+            &-events,
+            &-posts {
+                margin-bottom: 10px;
+            }
         }
     }
 }

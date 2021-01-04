@@ -11172,6 +11172,41 @@ section:not(:last-of-type) {
   flex-direction: row-reverse;
 }
 
+.event {
+  margin-top: 30px;
+}
+
+.event-date {
+  color: rgba(199, 33, 33, 0.6);
+  width: 100%;
+  border-bottom: 3px solid rgba(199, 33, 33, 0.6);
+  padding-bottom: 5px;
+}
+
+.event-date svg {
+  stroke: rgba(199, 33, 33, 0.6);
+}
+
+.event-title svg:hover {
+  cursor: pointer;
+}
+
+.event-content {
+  display: none;
+}
+
+.event-content p {
+  margin-bottom: 10px;
+}
+
+.event-content.visible {
+  display: block;
+}
+
+.event-location {
+  color: #0cb04a;
+}
+
 form label,
 form input,
 form textarea {
@@ -11398,11 +11433,15 @@ footer .legal p:not(:last-of-type) {
   margin-top: 50px;
 }
 
+.page--events h1 {
+  margin-bottom: 0;
+}
+
 .page--home section h1 {
   margin-bottom: 0;
 }
 
-.page--home section h2 {
+.page--home section > h2 {
   margin-top: 20px;
 }
 
@@ -11425,6 +11464,7 @@ footer .legal p:not(:last-of-type) {
   padding: 30px;
 }
 
+.page--home section .recent-events,
 .page--home section .recent-posts {
   margin-bottom: 10px;
 }

@@ -24,10 +24,18 @@
     </section>
     <div class="container">
         <section>
+            <h1>Recente events</h1>
+            <div class="row recent-events">
+                <?php get_template_part('components/events/card', 'loop', array(
+                    'amount' => '2',
+                )) ?>
+            </div>
+            <a href="<?php echo site_url('events') ; ?>" rel="noreferrer noopener" class="btn">Bekijk alle events</a>
+        </section>
+        <section>
             <h1>Recente posts</h1>
             <div class="row recent-posts">
-                <?php get_template_part('components/cards/cards', 'loop', array(
-                    'type' => 'post',
+                <?php get_template_part('components/posts/card', 'loop', array(
                     'amount' => '2',
                 )) ?>
             </div>

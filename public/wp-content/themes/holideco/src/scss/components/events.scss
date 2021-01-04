@@ -1,0 +1,31 @@
+.event {
+    margin-top: 30px;
+    &-date {
+        color: $color-red--60;
+        width: 100%;
+        border-bottom: 3px solid $color-red--60;
+        padding-bottom: 5px;
+        svg {
+            stroke: $color-red--60;
+        }
+    }
+    &-title {
+        svg {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &-content {
+        display: none;
+        p {
+            margin-bottom: 10px;
+        }
+        &.visible {
+            display: block;
+        }
+    }
+    &-location {
+        color: $color-green;
+    }
+}

@@ -1,1 +1,1 @@
-// alert('Welkom bij HoliDeco');
+import "./open-event-detail";

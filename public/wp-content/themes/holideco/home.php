@@ -3,7 +3,11 @@
 <div class="container page--nieuws">
     <h1>Nieuws</h1>
     <div class="row posts">
-        <?php get_template_part('components/cards/cards') ?>
+        <?php
+            while (have_posts()) { the_post();
+                get_template_part('components/posts/card');
+            }
+        ?>
     </div>
     <?php get_template_part('components/pagination', null, array(
         'previous_label' => 'Recentere posts',
