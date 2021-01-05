@@ -2,6 +2,16 @@
     $loop = new WP_Query( array(
         'post_type' => 'event',
         'posts_per_page' => $args['amount'] ? $args['amount'] : 6,
+        'meta_key' => 'date',
+        'orderby' => 'meta_value',
+        'order' => 'DESC',
+        'meta_query' => array(
+            array(
+                'key' => 'date',
+                'value' => date("YYmmdd"),
+                'compare' => '<='
+            )
+        )
     ));
 
     while ($loop->have_posts()) { $loop->the_post() ?>
