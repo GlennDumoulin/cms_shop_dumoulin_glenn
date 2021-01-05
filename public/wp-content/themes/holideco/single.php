@@ -7,7 +7,7 @@
                 <a href="<?php echo site_url('nieuws'); ?>">Nieuws</a> > <?php the_title(); ?>
             </h1>
             <div class="post-info--item">
-                <h4>Autheur</h4>
+                <h4>Auteur</h4>
                 <?php the_author_posts_link(); ?>
             </div>
             <div class="post-info--item">
