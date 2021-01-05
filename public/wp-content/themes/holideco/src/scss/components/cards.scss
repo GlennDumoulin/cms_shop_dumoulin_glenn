@@ -12,7 +12,7 @@
     }
     &-content {
         padding: 20px 20px 0;
-        & h2 {
+        h2 {
             color: $color-green;
             text-shadow: 2px 1px 1px $color-black--60;
             transition: $transition-basic;
@@ -20,9 +20,8 @@
     }
     &:hover {
         border-color: $color-red;
-        & h2 {
+        h2 {
             color: $color-red;
-            text-shadow: 2px 1px 1px $color-black;
         }
     }
     & > a:hover {
