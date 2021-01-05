@@ -8,7 +8,7 @@
     transition: $transition-basic;
     &:hover {
         color: $color-white;
-        background-color: $color-red;
+        background-color: $color-green--darker;
         border-radius: 0;
     }
     &.opacity {

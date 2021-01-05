@@ -18,7 +18,7 @@
                 <a href="http://holideco.local/contact" rel="noreferrer noopener" class="btn opacity">Aarzel niet en contacteer ons</a>
             </div>
             <div class="col-8 section-image">
-                <img src="http://holideco.local/wp-content/uploads/2020/12/holideco_logo.png" class="attachment-large size-large wp-post-image" alt loading="lazy">
+                <img src="http://holideco.local/wp-content/uploads/2021/01/holideco_logo.png" class="attachment-large size-large wp-post-image" alt loading="lazy">
             </div>
         </div>
     </section>

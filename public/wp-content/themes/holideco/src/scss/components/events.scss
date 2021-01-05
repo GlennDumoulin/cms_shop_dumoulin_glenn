@@ -11,8 +11,14 @@
     }
     &-title {
         svg {
+            border: 2px solid $color-black;
+            border-radius: 12px;
+            margin-left: 10px;
+            transition: $transition-basic;
             &:hover {
                 cursor: pointer;
+                stroke: $color-green;
+                border-color: $color-green;
             }
         }
     }

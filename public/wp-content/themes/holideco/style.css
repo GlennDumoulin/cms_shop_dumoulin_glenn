@@ -11044,7 +11044,7 @@ section:not(:last-of-type) {
 
 .btn:hover {
   color: #fff;
-  background-color: #c72121;
+  background-color: #0a5326;
   border-radius: 0;
 }
 
@@ -11187,8 +11187,17 @@ section:not(:last-of-type) {
   stroke: rgba(199, 33, 33, 0.6);
 }
 
+.event-title svg {
+  border: 2px solid #000;
+  border-radius: 12px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
 .event-title svg:hover {
   cursor: pointer;
+  stroke: #0cb04a;
+  border-color: #0cb04a;
 }
 
 .event-content {
@@ -11451,8 +11460,10 @@ footer .legal p:not(:last-of-type) {
 
 .page--home section .section-info {
   background-color: #0cb04a;
-  padding: 30px 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page--home section .section-info h2 {
@@ -11460,7 +11471,7 @@ footer .legal p:not(:last-of-type) {
 }
 
 .page--home section .section-image {
-  background-color: #eaeaea;
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 30px;
 }
 
@@ -11502,5 +11513,9 @@ footer .legal p:not(:last-of-type) {
 
 .post-content p {
   margin-bottom: 10px;
+}
+
+.post-content .img-bg {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 

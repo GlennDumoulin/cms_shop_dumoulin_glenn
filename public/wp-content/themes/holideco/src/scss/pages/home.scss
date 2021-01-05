@@ -16,14 +16,16 @@
         .section {
             &-info {
                 background-color: $color-green;
-                padding: 30px 0;
-                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 h2 {
                     color: $color-white;
                 }
             }
             &-image {
-                background-color: $color-grey;
+                background-color: $color-black--60;
                 padding: 30px;
             }
         }
