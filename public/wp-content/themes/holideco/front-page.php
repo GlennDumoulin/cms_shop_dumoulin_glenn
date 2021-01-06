@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="page--home">
-    <h1 class="hidden">Welkom bij HoliDeco!</h1>
+    <h1 class="hidden"><?php _e('Welcome to HoliDeco!', 'holideco'); ?></h1>
     <section>
         <?php if (is_active_sidebar( 'hero-webshop' )) { ?>
             <aside class="widget-area" role="complementary">
@@ -12,10 +12,10 @@
     <section>
         <div class="row no-gutters">
             <div class="col-4 section-info">
-                <h2>Benieuwd wie wij zijn?</h2>
-                <a href="http://holideco.local/over-ons" rel="noreferrer noopener" class="btn opacity">Ontdek het hier</a>
-                <h2>Heb je nog vragen?</h2>
-                <a href="http://holideco.local/contact" rel="noreferrer noopener" class="btn opacity">Aarzel niet en contacteer ons</a>
+                <h2><?php _e('Wanna know who we are?', 'holideco'); ?></h2>
+                <a href="http://holideco.local/over-ons" rel="noreferrer noopener" class="btn opacity"><?php _e('Discover it here', 'holideco'); ?></a>
+                <h2><?php _e('Do you have other questions?', 'holideco'); ?></h2>
+                <a href="http://holideco.local/contact" rel="noreferrer noopener" class="btn opacity"><?php _e('Don\'t panic and just ask us', 'holideco'); ?></a>
             </div>
             <div class="col-8 section-image">
                 <img src="http://holideco.local/wp-content/uploads/2021/01/holideco_logo.png" class="attachment-large size-large wp-post-image" alt loading="lazy">
@@ -24,22 +24,22 @@
     </section>
     <div class="container">
         <section>
-            <h1>Recente events</h1>
+            <h1><?php _e('Recent events', 'holideco'); ?></h1>
             <div class="row recent-events">
                 <?php get_template_part('components/events/card', 'loop', array(
                     'amount' => '2',
                 )) ?>
             </div>
-            <a href="<?php echo site_url('events') ; ?>" rel="noreferrer noopener" class="btn">Bekijk alle events</a>
+            <a href="<?php echo site_url('events') ; ?>" rel="noreferrer noopener" class="btn"><?php _e('See all events', 'holideco'); ?></a>
         </section>
         <section>
-            <h1>Recente posts</h1>
+            <h1><?php _e('Recent posts', 'holideco'); ?></h1>
             <div class="row recent-posts">
                 <?php get_template_part('components/posts/card', 'loop', array(
                     'amount' => '2',
                 )) ?>
             </div>
-            <a href="<?php echo get_permalink( get_option('page_for_posts') ); ?>" rel="noreferrer noopener" class="btn">Bekijk alle posts</a>
+            <a href="<?php echo get_permalink( get_option('page_for_posts') ); ?>" rel="noreferrer noopener" class="btn"><?php _e('See all posts', 'holideco'); ?></a>
         </section>
     </div>
     <section>

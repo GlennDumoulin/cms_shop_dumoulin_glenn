@@ -1,13 +1,10 @@
 <?php
 
-function addTitleTag()
-{
+function addTitleTag() {
     add_theme_support('title-tag');
 }
 
-
-function addCustomLogo()
-{
+function addCustomLogo() {
     add_theme_support('custom-logo', array(
         'height' => 200,
         'width' => 200,
@@ -17,7 +14,6 @@ function addCustomLogo()
         'unlink-homepage-logo' => false,
     ));
 }
-
 
 add_action('init', 'addTitleTag');
 add_action('after_setup_theme', 'addCustomLogo');

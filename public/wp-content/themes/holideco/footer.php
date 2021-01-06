@@ -13,7 +13,7 @@
                         </p>
                     </div>
                     <nav class="col-lg-3 col-md-6 col-12 navigation">
-                            <h1>Feestdagen</h1>
+                            <h1><?php _e('Collections', 'holideco'); ?></h1>
                             <?php wp_nav_menu(array(
                                 'menu' => 'footer',
                                 'theme_location' => 'footer-nav'
@@ -29,8 +29,8 @@
                 </div>
             </div>
             <div class="legal">
-                <p class="small">©2020</p>
-                <p class="small">Made by Glenn Dumoulin</p>
+                <p class="small"><?php _e('©2020', 'holideco'); ?></p>
+                <p class="small"><?php _e('Made by Glenn Dumoulin', 'holideco'); ?></p>
             </div>
         </footer>
         <script>

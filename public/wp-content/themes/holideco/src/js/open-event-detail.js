@@ -5,6 +5,6 @@ const eventContentContainers = document.querySelectorAll(
 
 eventButtons.forEach((btn, i) => {
     btn.addEventListener("click", () => {
-        eventContentContainers[i].classList.toggle("visible");
+        eventContentContainers[i].classList.toggle("hidden");
     });
 });

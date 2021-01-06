@@ -2,7 +2,7 @@
 
 <div class="container page--archive">
     <h1>
-        Tag: <?php single_tag_title(); ?>
+        <?php _e('Tag:', 'holideco'); ?> <?php single_tag_title(); ?>
     </h1>
     <div class="row posts">
         <?php
@@ -16,7 +16,7 @@
         'next_label' => 'Volgende',
     )) ?>
     <div class="other-archives">
-        <h2>Bekijk ook andere categorieën</h2>
+        <h2><?php _e('Also watch other tags', 'holideco'); ?></h2>
         <?php
             $tags = get_tags();
             if ( $tags ) {

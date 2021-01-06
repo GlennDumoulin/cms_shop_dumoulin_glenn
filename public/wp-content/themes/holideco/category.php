@@ -2,7 +2,7 @@
 
 <div class="container page--archive">
     <h1>
-        Categorie: <?php single_cat_title(); ?>
+        <?php _e('Category:', 'holideco'); ?> <?php single_cat_title(); ?>
     </h1>
     <div class="row posts">
         <?php
@@ -16,7 +16,7 @@
         'next_label' => 'Volgende',
     )) ?>
     <div class="other-archives">
-        <h2>Bekijk ook andere categorieën</h2>
+        <h2><?php _e('Also watch other categories', 'holideco'); ?></h2>
         <?php wp_list_cats(); ?>
     </div>
 </div>

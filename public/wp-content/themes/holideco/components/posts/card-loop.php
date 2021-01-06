@@ -25,7 +25,7 @@
                     </div>
                     <div class="card-author">
                         <em class="author">
-                            Geschreven door <?php the_author(); ?> op <?php echo get_the_date(); ?>
+                            <?php _e('Written by', 'holideco'); ?> <?php the_author(); ?> <?php _e('on', 'holideco'); ?> <?php echo get_the_date(); ?>
                         </em>
                     </div>
                 </a>

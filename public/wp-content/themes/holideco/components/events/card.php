@@ -6,9 +6,9 @@
         <h2 class="event-title">
             <?php the_title(); ?> <i data-feather="chevrons-down" class="event-btn"></i>
         </h2>
-        <div class="event-content event-content-container">
+        <div class="event-content event-content-container hidden">
             <p class="event-location">
-                Locatie(s): 
+                <?php _e('Location(s):', 'holideco'); ?>
                 <?php
                     $terms = get_the_terms (get_the_ID(), 'location');
                     if (!is_wp_error($terms)) {

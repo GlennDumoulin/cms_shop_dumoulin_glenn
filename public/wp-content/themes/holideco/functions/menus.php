@@ -1,7 +1,6 @@
 <?php
 
-function registerMenuLocations()
-{
+function registerMenuLocations() {
     register_nav_menus(array(
         'header-nav' => 'Header Menu',
         'footer-nav' => 'Footer Menu',

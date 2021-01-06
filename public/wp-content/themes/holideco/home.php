@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container page--nieuws">
-    <h1>Nieuws</h1>
+    <h1><?php _e('News', 'holideco'); ?></h1>
     <div class="row posts">
         <?php
             while (have_posts()) { the_post();

@@ -1,7 +1,7 @@
 <?php
 
-function my_theme_load_theme_textdomain() {
+function loadTextdomain() {
     load_theme_textdomain('holideco', get_template_directory() . '/languages');
 }
 
-add_action('after_setup_theme', 'my_theme_load_theme_textdomain');
+add_action('after_setup_theme', 'loadTextdomain');

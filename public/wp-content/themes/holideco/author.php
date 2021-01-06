@@ -2,7 +2,7 @@
 
 <div class="container page--archive">
     <h1>
-        Auteur: <?php the_author(); ?>
+        <?php _e('Author:', 'holideco'); ?> <?php the_author(); ?>
     </h1>
     <div class="row posts">
         <?php
@@ -16,7 +16,7 @@
         'next_label' => 'Volgende',
     )) ?>
     <div class="other-archives">
-        <h2>Bekijk ook andere auteurs</h2>
+        <h2><?php _e('Also watch other authors', 'holideco'); ?></h2>
         <?php wp_list_authors(); ?>
     </div>
 </div>

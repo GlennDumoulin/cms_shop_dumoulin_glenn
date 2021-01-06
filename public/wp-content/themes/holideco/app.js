@@ -112,7 +112,7 @@ var eventButtons = document.querySelectorAll(".event-btn");
 var eventContentContainers = document.querySelectorAll(".event-content-container");
 eventButtons.forEach(function (btn, i) {
   btn.addEventListener("click", function () {
-    eventContentContainers[i].classList.toggle("visible");
+    eventContentContainers[i].classList.toggle("hidden");
   });
 });
 

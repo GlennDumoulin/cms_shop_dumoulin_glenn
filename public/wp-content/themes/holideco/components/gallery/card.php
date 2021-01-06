@@ -16,7 +16,7 @@
                         ?>
                 </h2>
                 <p>
-                    Door <?php the_title(); ?>
+                    <?php _e('By', 'holideco'); ?> <?php the_title(); ?>
                 </p>
             </div>
             <div>

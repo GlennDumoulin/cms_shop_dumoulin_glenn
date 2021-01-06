@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 <div class="container page--archive">
-    <h1>Archive: 
+    <h1>
+        <?php _e('Archive:', 'holideco'); ?> 
         <?php
             if (is_author()) {
                 the_author();

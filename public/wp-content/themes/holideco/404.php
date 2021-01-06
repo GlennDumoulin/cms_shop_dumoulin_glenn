@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <div class="container">
-    <h1>Ho ho ho, dit was niet de bedoeling!</h1>
-    <p>Probeer anders een van de pagina's in onze navigatie of klik op de knop hieronder. Onzo excuses voor het ongemak.</p>
-    <a href="<?php echo site_url(); ?>" rel="noreferrer noopener" class="btn">Terug naar onze home</a>
+    <h1><?php _e('Ho ho ho, this wasn\'t to happen!', 'holideco'); ?></h1>
+    <p><?php _e('You can try a page from our navigation or click on the button below. We apoligize for this inconvinience.', 'holideco'); ?></p>
+    <a href="<?php echo site_url(); ?>" rel="noreferrer noopener" class="btn"><?php _e('Back to our home', 'holideco'); ?></a>
 </div>
 
 <?php get_footer(); ?>
