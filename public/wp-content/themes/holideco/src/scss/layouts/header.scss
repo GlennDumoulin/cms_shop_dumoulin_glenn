@@ -1,7 +1,16 @@
 header {
     background-color: $color-green;
-    padding: 20px 50px;
+    .banner {
+        text-align: center;
+        background-color: $color-red;
+        padding: 7px 0;
+        p {
+            color: $color-white;
+            margin: 0;
+        }
+    }
     .navigation {
+        padding: 20px 50px;
         display: flex;
         justify-content: space-between;
         .custom-logo-link {

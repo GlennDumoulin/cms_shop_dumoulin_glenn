@@ -8,6 +8,11 @@
     </head>
     <body>
         <header>
+            <?php if (is_active_sidebar( 'banner' )) { ?>
+                <aside class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'banner' ); ?>
+                </aside>
+            <?php } ?>
             <nav class="navigation">
                 <?php
                     if (function_exists('the_custom_logo')) {

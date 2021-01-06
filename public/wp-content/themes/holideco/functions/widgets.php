@@ -33,5 +33,18 @@ function frontpageWidgets() {
     ));
 }
 
+function bannerWidget() {
+    register_sidebar( array(
+        'name' => __( 'Banner Area', 'banner' ),
+        'id' => 'banner',
+        'description' => __( 'Description', 'banner' ),
+        'before_widget' => '<div class="banner">',
+        'after_widget' => '</div>',
+        'before_title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
+    ));
+}
+
 add_action( 'widgets_init', 'footerWidgets' );
 add_action( 'widgets_init', 'frontpageWidgets' );
+add_action( 'widgets_init', 'bannerWidget' );

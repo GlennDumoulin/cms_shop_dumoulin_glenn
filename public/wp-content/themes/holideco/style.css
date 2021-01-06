@@ -11037,7 +11037,6 @@ section:not(:last-of-type) {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 20px;
-  margin-top: 10px;
   border-radius: 0 15px 0 15px;
   transition: all 0.3s ease-in-out;
 }
@@ -11057,6 +11056,12 @@ section:not(:last-of-type) {
   color: #000;
   background-color: #fff;
   border-color: #000;
+}
+
+.btn + h1,
+.btn + h2,
+.btn + p {
+  margin-top: 20px;
 }
 
 .pagination a {
@@ -11399,10 +11404,21 @@ form.failed .wpcf7-response-output {
 
 header {
   background-color: #0cb04a;
-  padding: 20px 50px;
+}
+
+header .banner {
+  text-align: center;
+  background-color: #c72121;
+  padding: 7px 0;
+}
+
+header .banner p {
+  color: #fff;
+  margin: 0;
 }
 
 header .navigation {
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -11453,6 +11469,10 @@ footer .footer-content a:hover {
 
 footer .footer-content .navigation {
   display: block;
+}
+
+footer .footer-content .btn {
+  margin-top: 10px;
 }
 
 footer .legal {
