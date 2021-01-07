@@ -2,10 +2,19 @@
 
 function footerWidgets() {
     register_sidebar( array(
-        'name' => __( 'Footer Area', 'footer-form' ),
+        'name' => __( 'Footer Form', 'footer-form' ),
         'id' => 'footer-form',
         'description' => __( 'Description', 'footer-form' ),
         'before_widget' => '<div class="footer-form">',
+        'after_widget' => '</div>',
+        'before_title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
+    ));
+    register_sidebar( array(
+        'name' => __( 'Footer Address', 'footer-address' ),
+        'id' => 'footer-address',
+        'description' => __( 'Description', 'footer-address' ),
+        'before_widget' => '<div class="footer-address">',
         'after_widget' => '</div>',
         'before_title' => '<h1 class="widget-title">',
         'after_title' => '</h1>',
@@ -27,6 +36,15 @@ function frontpageWidgets() {
         'id' => 'hero-galerij',
         'description' => __( 'Description', 'hero-galerij' ),
         'before_widget' => '<div class="hero-galerij">',
+        'after_widget' => '</div>',
+        'before_title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
+    ));
+    register_sidebar( array(
+        'name' => __( 'Large Logo', 'logo-large' ),
+        'id' => 'logo-large',
+        'description' => __( 'Description', 'logo-large' ),
+        'before_widget' => '<div class="logo-large">',
         'after_widget' => '</div>',
         'before_title' => '<h1 class="widget-title">',
         'after_title' => '</h1>',

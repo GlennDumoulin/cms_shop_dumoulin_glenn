@@ -3,14 +3,11 @@
             <div class="container">
                 <div class="row footer-content">
                     <div class="col-lg-3 col-md-6 col-12 contact-info">
-                        <h1>HoliDeco</h1>
-                        <a href="mailto:info@holideco.com">info@holideco.com</a>
-                        <a href="tel:+32123456789">+32 123 45 67 89</a>
-                        <p class="small">
-                            Jollyroad 7 <br>
-                            Easter City <br>
-                            Ghostland
-                        </p>
+                        <?php if (is_active_sidebar( 'footer-address' )) { ?>
+                            <aside class="widget-area" role="complementary">
+                                <?php dynamic_sidebar( 'footer-address' ); ?>
+                            </aside>
+                        <?php } ?>
                     </div>
                     <nav class="col-lg-3 col-md-6 col-12 navigation">
                             <h1><?php _e('Collections', 'holideco'); ?></h1>

@@ -7,3 +7,4 @@ require_once locate_template('functions/menus.php');
 require_once locate_template('functions/queries.php');
 require_once locate_template('functions/support.php');
 require_once locate_template('functions/widgets.php');
+require_once locate_template('functions/woocommerce.php');

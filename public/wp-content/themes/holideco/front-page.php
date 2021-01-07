@@ -18,7 +18,11 @@
                 <a href="http://holideco.local/contact" rel="noreferrer noopener" class="btn opacity"><?php _e('Don\'t panic and just ask us', 'holideco'); ?></a>
             </div>
             <div class="col-8 section-image">
-                <img src="http://holideco.local/wp-content/uploads/2021/01/holideco_logo.png" class="attachment-large size-large wp-post-image" alt loading="lazy">
+                <?php if (is_active_sidebar( 'logo-large' )) { ?>
+                    <aside class="widget-area" role="complementary">
+                        <?php dynamic_sidebar( 'logo-large' ); ?>
+                    </aside>
+                <?php } ?>
             </div>
         </div>
     </section>

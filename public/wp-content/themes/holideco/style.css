@@ -11001,6 +11001,10 @@ a:hover {
   text-decoration: underline;
 }
 
+ul {
+  list-style: none;
+}
+
 img {
   -o-object-fit: cover;
      object-fit: cover;
