@@ -5,6 +5,11 @@
         <?php the_title(); ?>
     </h1>
     <?php get_search_form(); ?>
+    <div class="row result-containers">
+        <div class="col-4 posts-container"></div>
+        <div class="col-4 events-container"></div>
+        <div class="col-4 gallery-container"></div>
+    </div>
 </div>
 
 <?php get_footer(); ?>

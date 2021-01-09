@@ -2171,12 +2171,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 
-var handleSearch = function handleSearch(searchValue) {
+var handleSearch = function handleSearch(searchValue, postsContainer, eventsContainer, galleryContainer) {
   axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("".concat(siteData.rootUrl, "/wp-json/wp/v2/posts?search=").concat(searchValue)).then(function (response) {
     if (response.data.length) {
       console.log(response.data);
     } else {
-      console.log("Geen resultaten");
+      postsContainer.innerHTML = "Geen resultaten";
+    }
+  })["catch"](function (error) {
+    alert(error.message);
+  });
+  axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("".concat(siteData.rootUrl, "/wp-json/wp/v2/event?search=").concat(searchValue)).then(function (response) {
+    if (response.data.length) {
+      console.log(response.data);
+    } else {
+      eventsContainer.innerHTML = "Geen resultaten";
+    }
+  })["catch"](function (error) {
+    alert(error.message);
+  });
+  axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("".concat(siteData.rootUrl, "/wp-json/wp/v2/gallery_item?search=").concat(searchValue)).then(function (response) {
+    if (response.data.length) {
+      console.log(response.data);
+    } else {
+      galleryContainer.innerHTML = "Geen resultaten";
     }
   })["catch"](function (error) {
     alert(error.message);
@@ -2185,8 +2203,11 @@ var handleSearch = function handleSearch(searchValue) {
 
 document.addEventListener("DOMContentLoaded", function () {
   var searchInput = document.getElementById("search-input");
+  var postsContainer = document.querySelector(".posts-container");
+  var eventsContainer = document.querySelector(".events-container");
+  var galleryContainer = document.querySelector(".gallery-container");
   searchInput.addEventListener("input", function (e) {
-    return handleSearch(e.target.value);
+    return handleSearch(e.target.value, postsContainer, eventsContainer, galleryContainer);
   });
 });
 
