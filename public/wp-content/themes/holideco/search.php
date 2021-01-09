@@ -1,24 +1,24 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container page--zoeken">
     <h1>
-        Jouw resultaten voor '<?php the_search_query() ?>'
+        Zoekresultaten voor <?php the_search_query() ?>
     </h1>
 
-    <a href="<?php echo esc_url(site_url('zoeken')) ?>">
-        Terug naar zoeken
+    <a href="<?php echo esc_url(site_url('zoeken')) ?>" title="Terug naar zoeken" class="back-btn">
+        <i data-feather="arrow-left-circle"></i>
     </a>
 
     <?php get_search_form() ?>
 
-    <?php
-    while (have_posts()) { the_post() ?>
-        <div class="search-results">
+    <ul class="all-results">
+        <?php
+        while (have_posts()) { the_post() ?>
             <?php get_template_part( 'components/search/result', null, array(
                 'post_type' => get_post_type(),
             )) ?>
-        </div>
-    <?php } ?>
+        <?php } ?>
+    </ul>
 
     <?php get_template_part('components/pagination', null, array(
         'previous_label' => 'Vorige resultaten',

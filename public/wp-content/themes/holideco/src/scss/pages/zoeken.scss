@@ -1,0 +1,12 @@
+.page--zoeken {
+    .all-results {
+        list-style: disc;
+        margin-top: 30px;
+        .result {
+            a {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
