@@ -10936,7 +10936,6 @@ body {
 }
 
 main {
-  position: relative;
   margin: 50px 0;
 }
 
@@ -11062,22 +11061,6 @@ section:not(:last-of-type) {
 
 .btn svg {
   stroke: #fff;
-}
-
-.back-btn {
-  position: absolute;
-  top: 0;
-  left: 50px;
-}
-
-.back-btn svg {
-  width: 40px;
-  height: 40px;
-  transition: all 0.3s ease-in-out;
-}
-
-.back-btn svg:hover {
-  stroke: #0cb04a;
 }
 
 .pagination a {
@@ -11511,6 +11494,10 @@ footer .legal p:not(:last-of-type) {
   margin-bottom: 0;
 }
 
+.page--archive .other-archives {
+  margin-top: 30px;
+}
+
 .page--contact a {
   font-weight: 700;
 }
@@ -11596,13 +11583,18 @@ footer .legal p:not(:last-of-type) {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.page--zoeken .all-results {
-  list-style: disc;
+.page--zoeken .result-containers > div {
   margin-top: 30px;
 }
 
-.page--zoeken .all-results .result a {
-  font-size: 1.5rem;
+.page--zoeken .result-containers .all-results {
+  list-style: disc;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.page--zoeken .result-containers .all-results .result a {
+  font-size: 1.3rem;
   font-weight: 500;
 }
 

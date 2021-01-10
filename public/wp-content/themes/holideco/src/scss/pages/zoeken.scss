@@ -1,11 +1,17 @@
 .page--zoeken {
-    .all-results {
-        list-style: disc;
-        margin-top: 30px;
-        .result {
-            a {
-                font-size: 1.5rem;
-                font-weight: 500;
+    .result-containers {
+        > div {
+            margin-top: 30px;
+        }
+        .all-results {
+            list-style: disc;
+            margin-top: 10px;
+            margin-bottom: 0;
+            .result {
+                a {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
             }
         }
     }

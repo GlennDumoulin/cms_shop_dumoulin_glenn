@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: HoliDeco\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-06 17:08+0000\n"
-"PO-Revision-Date: 2021-01-06 22:36+0000\n"
+"PO-Revision-Date: 2021-01-10 14:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: Nederlands (België)\n"
 "Language: nl_BE\n"
@@ -43,6 +43,10 @@ msgstr "Auteur:"
 msgid "Back to our home"
 msgstr "Terug naar onze home"
 
+#: search.php:5
+msgid "Back to search"
+msgstr "Terug naar zoeken"
+
 #: components/gallery/card.php:19
 msgid "By"
 msgstr "Door"
@@ -55,7 +59,7 @@ msgstr "Categorieën"
 msgid "Category:"
 msgstr "Categorie:"
 
-#: footer.php:16
+#: footer.php:13
 msgid "Collections"
 msgstr "Collecties"
 
@@ -71,6 +75,10 @@ msgstr "Heb je nog andere vragen?"
 msgid "Don't panic and just ask us"
 msgstr "Aarzel niet en vraag het ons"
 
+#: search.php:46 single-event.php:5
+msgid "Events"
+msgstr "Events"
+
 #. Author of the theme
 msgid "Glenn Dumoulin"
 msgstr "Glenn Dumoulin"
@@ -83,11 +91,12 @@ msgstr "Ho ho ho, dit was niet de bedoeling!"
 msgid "HoliDeco"
 msgstr "HoliDeco"
 
-#: components/events/card-loop.php:28 components/events/card.php:11
+#: single-event.php:9 components/events/card-loop.php:28
+#: components/events/card.php:11
 msgid "Location(s):"
 msgstr "Locatie(s):"
 
-#: footer.php:33
+#: footer.php:30
 msgid "Made by Glenn Dumoulin"
 msgstr "Gemaakt door Glenn Dumoulin"
 
@@ -107,19 +116,31 @@ msgstr "Geen tags"
 msgid "on"
 msgstr "op"
 
-#: front-page.php:27
+#: search.php:16
+msgid "Pages"
+msgstr "Pagina's"
+
+#: search.php:31
+msgid "Posts"
+msgstr "Posts"
+
+#: front-page.php:31
 msgid "Recent events"
 msgstr "Recente events"
 
-#: front-page.php:36
+#: front-page.php:40
 msgid "Recent posts"
 msgstr "Recente posts"
 
-#: front-page.php:33
+#: search.php:9
+msgid "Searchresults for"
+msgstr "Zoekresultaten voor"
+
+#: front-page.php:37
 msgid "See all events"
 msgstr "Bekijk alle events"
 
-#: front-page.php:42
+#: front-page.php:46
 msgid "See all posts"
 msgstr "Bekijk alle posts"
 
@@ -158,6 +179,6 @@ msgstr ""
 "Probeer anders een van de pagina's in onze navigatie of klik op de knop "
 "hieronder. Onze excuses voor het ongemak."
 
-#: footer.php:32
+#: footer.php:29
 msgid "©2020"
 msgstr "©2020"

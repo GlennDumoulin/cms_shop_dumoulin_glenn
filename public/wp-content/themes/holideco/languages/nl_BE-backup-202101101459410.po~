@@ -1,14 +1,13 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: HoliDeco\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-06 22:28+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: 2021-01-06 17:08+0000\n"
+"PO-Revision-Date: 2021-01-10 14:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: Nederlands (België)\n"
+"Language: nl_BE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,138 +17,152 @@ msgstr ""
 
 #: author.php:19
 msgid "Also watch other authors"
-msgstr ""
+msgstr "Bekijk ook andere auteurs"
 
 #: category.php:19
 msgid "Also watch other categories"
-msgstr ""
+msgstr "Bekijk ook andere categorieën"
 
 #: tag.php:19
 msgid "Also watch other tags"
-msgstr ""
+msgstr "Bekijk ook andere tags"
 
 #: archive.php:5
 msgid "Archive:"
-msgstr ""
+msgstr "Archief:"
 
 #: single.php:10
 msgid "Author"
-msgstr ""
+msgstr "Auteur"
 
 #: author.php:5
 msgid "Author:"
-msgstr ""
+msgstr "Auteur:"
 
 #: 404.php:6
 msgid "Back to our home"
-msgstr ""
+msgstr "Terug naar onze home"
 
 #: components/gallery/card.php:19
 msgid "By"
-msgstr ""
+msgstr "Door"
 
 #: single.php:14
 msgid "Categories"
-msgstr ""
+msgstr "Categorieën"
 
 #: category.php:5
 msgid "Category:"
-msgstr ""
+msgstr "Categorie:"
 
-#: footer.php:16
+#: footer.php:13
 msgid "Collections"
-msgstr ""
+msgstr "Collecties"
 
 #: front-page.php:16
 msgid "Discover it here"
-msgstr ""
+msgstr "Ontdek het hier"
 
 #: front-page.php:17
 msgid "Do you have other questions?"
-msgstr ""
+msgstr "Heb je nog andere vragen?"
 
 #: front-page.php:18
 msgid "Don't panic and just ask us"
-msgstr ""
+msgstr "Aarzel niet en vraag het ons"
+
+#: single-event.php:5
+msgid "Events"
+msgstr "Events"
 
 #. Author of the theme
 msgid "Glenn Dumoulin"
-msgstr ""
+msgstr "Glenn Dumoulin"
 
 #: 404.php:4
 msgid "Ho ho ho, this wasn't to happen!"
-msgstr ""
+msgstr "Ho ho ho, dit was niet de bedoeling!"
 
 #. Name of the theme
 msgid "HoliDeco"
-msgstr ""
+msgstr "HoliDeco"
 
-#: components/events/card-loop.php:28 components/events/card.php:11
+#: single-event.php:9 components/events/card-loop.php:28
+#: components/events/card.php:11
 msgid "Location(s):"
-msgstr ""
+msgstr "Locatie(s):"
 
-#: footer.php:33
+#: footer.php:30
 msgid "Made by Glenn Dumoulin"
-msgstr ""
+msgstr "Gemaakt door Glenn Dumoulin"
 
 #: home.php:4 index.php:4 single.php:7
 msgid "News"
-msgstr ""
+msgstr "Nieuws"
 
 #: single.php:20
 msgid "No categories"
-msgstr ""
+msgstr "Geen categorieën"
 
 #: single.php:31
 msgid "No tags"
-msgstr ""
+msgstr "Geen tags"
 
 #: components/posts/card-loop.php:28 components/posts/card.php:21
 msgid "on"
-msgstr ""
+msgstr "op"
 
-#: front-page.php:27
+#: front-page.php:31
 msgid "Recent events"
-msgstr ""
+msgstr "Recente events"
 
-#: front-page.php:36
+#: front-page.php:40
 msgid "Recent posts"
-msgstr ""
+msgstr "Recente posts"
 
-#: front-page.php:33
+#: front-page.php:37
 msgid "See all events"
-msgstr ""
+msgstr "Bekijk alle events"
 
-#: front-page.php:42
+#: front-page.php:46
 msgid "See all posts"
-msgstr ""
+msgstr "Bekijk alle posts"
 
 #: tag.php:5
 msgid "Tag:"
-msgstr ""
+msgstr "Tag:"
+
+#: single.php:25
+msgid "Tags"
+msgstr "Tags"
 
 #: front-page.php:15
 msgid "Wanna know who we are?"
-msgstr ""
+msgstr "Benieuwd wie wij zijn?"
 
 #. Description of the theme
 msgid "Webshop with all kinds of decorations for different holidays"
-msgstr ""
+msgstr "Webshop met diverse soorten decoraties voor verschillende feestdagen"
 
 #: front-page.php:4
 msgid "Welcome to HoliDeco!"
-msgstr ""
+msgstr "Welkom bij HoliDeco!"
 
 #: components/posts/card-loop.php:28 components/posts/card.php:21
 msgid "Written by"
-msgstr ""
+msgstr "Geschreven door"
 
 #: 404.php:5
+#| msgid ""
+#| "You can try a page from our navigation or click on hte button below. We "
+#| "apoligize for this inconvinience."
 msgid ""
 "You can try a page from our navigation or click on the button below. We "
 "apoligize for this inconvinience."
 msgstr ""
+"Probeer anders een van de pagina's in onze navigatie of klik op de knop "
+"hieronder. Onze excuses voor het ongemak."
 
-#: footer.php:32
+#: footer.php:29
 msgid "©2020"
-msgstr ""
+msgstr "©2020"

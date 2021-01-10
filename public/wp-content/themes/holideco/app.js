@@ -2171,43 +2171,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 
-var handleSearch = function handleSearch(searchValue, postsContainer, eventsContainer, galleryContainer) {
+var handleSearch = function handleSearch(searchValue, pagesContainer, postsContainer, eventsContainer) {
+  axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("".concat(siteData.rootUrl, "/wp-json/wp/v2/pages?search=").concat(searchValue)).then(function (response) {
+    if (response.data.length) {
+      pagesContainer.innerHTML = "\n                <h2>Pagina's</h2>\n                <ul class=\"all-results\">\n                  ".concat(response.data.map(function (result) {
+        return "\n                      <li class=\"result\">\n                          <a href=\"".concat(result.link, "\">\n                              ").concat(result.title.rendered, "\n                          </a>\n                      </li>");
+      }).join(""), "\n                </ul>\n                ");
+    } else {
+      pagesContainer.innerHTML = "\n                <h2>Pagina's</h2>\n                <p>Geen resultaten</p>\n                ";
+    }
+  })["catch"](function (error) {
+    alert(error.message);
+  });
   axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("".concat(siteData.rootUrl, "/wp-json/wp/v2/posts?search=").concat(searchValue)).then(function (response) {
     if (response.data.length) {
       console.log(response.data);
+      postsContainer.innerHTML = "\n                <h2>Posts</h2>\n                <ul class=\"all-results\">\n                  ".concat(response.data.map(function (result) {
+        return "\n                      <li class=\"result\">\n                          <a href=\"".concat(result.link, "\">\n                              ").concat(result.title.rendered, "\n                          </a>\n                      </li>");
+      }).join(""), "\n                </ul>\n                ");
     } else {
-      postsContainer.innerHTML = "Geen resultaten";
+      postsContainer.innerHTML = "\n                <h2>Posts</h2>\n                <p>Geen resultaten</p>\n                ";
     }
   })["catch"](function (error) {
     alert(error.message);
   });
   axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("".concat(siteData.rootUrl, "/wp-json/wp/v2/event?search=").concat(searchValue)).then(function (response) {
     if (response.data.length) {
-      console.log(response.data);
+      eventsContainer.innerHTML = "\n                <h2>Events</h2>\n                <ul class=\"all-results\">\n                  ".concat(response.data.map(function (result) {
+        return "\n                      <li class=\"result\">\n                          <a href=\"".concat(result.link, "\">\n                              ").concat(result.title.rendered, "\n                          </a>\n                      </li>");
+      }).join(""), "\n                </ul>\n                ");
     } else {
-      eventsContainer.innerHTML = "Geen resultaten";
-    }
-  })["catch"](function (error) {
-    alert(error.message);
-  });
-  axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("".concat(siteData.rootUrl, "/wp-json/wp/v2/gallery_item?search=").concat(searchValue)).then(function (response) {
-    if (response.data.length) {
-      console.log(response.data);
-    } else {
-      galleryContainer.innerHTML = "Geen resultaten";
+      eventsContainer.innerHTML = "\n                <h2>Events</h2>\n                <p>Geen resultaten</p>\n                ";
     }
   })["catch"](function (error) {
     alert(error.message);
   });
 };
 
+var debounce = function debounce(callback, wait) {
+  var timerId;
+  return function () {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    clearTimeout(timerId);
+    timerId = setTimeout(function () {
+      callback.apply(void 0, args);
+    }, wait);
+  };
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   var searchInput = document.getElementById("search-input");
+  var pagesContainer = document.querySelector(".pages-container");
   var postsContainer = document.querySelector(".posts-container");
   var eventsContainer = document.querySelector(".events-container");
-  var galleryContainer = document.querySelector(".gallery-container");
   searchInput.addEventListener("input", function (e) {
-    return handleSearch(e.target.value, postsContainer, eventsContainer, galleryContainer);
+    return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 1000);
   });
 });
 

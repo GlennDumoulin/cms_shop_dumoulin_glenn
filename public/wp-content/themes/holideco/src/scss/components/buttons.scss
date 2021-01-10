@@ -30,20 +30,6 @@
     }
 }
 
-.back-btn {
-    position: absolute;
-    top: 0;
-    left: 50px;
-    svg {
-        width: 40px;
-        height: 40px;
-        transition: $transition-basic;
-        &:hover {
-            stroke: $color-green;
-        }
-    }
-}
-
 .pagination {
     a {
         display: flex;

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HoliDeco\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-06 22:35+0000\n"
+"POT-Creation-Date: 2021-01-10 14:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -44,6 +44,10 @@ msgstr ""
 msgid "Back to our home"
 msgstr ""
 
+#: search.php:5
+msgid "Back to search"
+msgstr ""
+
 #: components/gallery/card.php:19
 msgid "By"
 msgstr ""
@@ -56,7 +60,7 @@ msgstr ""
 msgid "Category:"
 msgstr ""
 
-#: footer.php:16
+#: footer.php:13
 msgid "Collections"
 msgstr ""
 
@@ -72,6 +76,10 @@ msgstr ""
 msgid "Don't panic and just ask us"
 msgstr ""
 
+#: search.php:46 single-event.php:5
+msgid "Events"
+msgstr ""
+
 #. Author of the theme
 msgid "Glenn Dumoulin"
 msgstr ""
@@ -84,11 +92,12 @@ msgstr ""
 msgid "HoliDeco"
 msgstr ""
 
-#: components/events/card-loop.php:28 components/events/card.php:11
+#: single-event.php:9 components/events/card-loop.php:28
+#: components/events/card.php:11
 msgid "Location(s):"
 msgstr ""
 
-#: footer.php:33
+#: footer.php:30
 msgid "Made by Glenn Dumoulin"
 msgstr ""
 
@@ -108,19 +117,31 @@ msgstr ""
 msgid "on"
 msgstr ""
 
-#: front-page.php:27
+#: search.php:16
+msgid "Pages"
+msgstr ""
+
+#: search.php:31
+msgid "Posts"
+msgstr ""
+
+#: front-page.php:31
 msgid "Recent events"
 msgstr ""
 
-#: front-page.php:36
+#: front-page.php:40
 msgid "Recent posts"
 msgstr ""
 
-#: front-page.php:33
+#: search.php:9
+msgid "Searchresults for"
+msgstr ""
+
+#: front-page.php:37
 msgid "See all events"
 msgstr ""
 
-#: front-page.php:42
+#: front-page.php:46
 msgid "See all posts"
 msgstr ""
 
@@ -154,6 +175,6 @@ msgid ""
 "apoligize for this inconvinience."
 msgstr ""
 
-#: footer.php:32
+#: footer.php:29
 msgid "©2020"
 msgstr ""
