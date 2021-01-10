@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HoliDeco\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-10 14:58+0000\n"
+"POT-Creation-Date: 2021-01-10 15:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Don't panic and just ask us"
 msgstr ""
 
-#: search.php:46 single-event.php:5
+#: search.php:54 single-event.php:5
 msgid "Events"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: search.php:31
+#: search.php:35
 msgid "Posts"
 msgstr ""
 
@@ -131,6 +131,10 @@ msgstr ""
 
 #: front-page.php:40
 msgid "Recent posts"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search"
 msgstr ""
 
 #: search.php:9

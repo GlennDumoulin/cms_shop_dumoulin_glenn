@@ -22,6 +22,10 @@
                     's' => get_search_query(),
                 ));
 
+                if (empty($pageResults->have_posts())) {
+                    echo '<p>Geen resultaten</p>';
+                }
+
                 while ($pageResults->have_posts()) { $pageResults->the_post() ?>
                     <?php get_template_part( 'components/search/result' ); ?>
                 <?php } ?>
@@ -37,6 +41,10 @@
                     's' => get_search_query(),
                 ));
 
+                if (empty($postResults->have_posts())) {
+                    echo '<p>Geen resultaten</p>';
+                }
+
                 while ($postResults->have_posts()) { $postResults->the_post() ?>
                     <?php get_template_part( 'components/search/result' ); ?>
                 <?php } ?>
@@ -51,6 +59,10 @@
                     'post_type' => 'event',
                     's' => get_search_query(),
                 ));
+
+                if (empty($eventResults->have_posts())) {
+                    echo '<p>Geen resultaten</p>';
+                }
 
                 while ($eventResults->have_posts()) { $eventResults->the_post() ?>
                     <?php get_template_part( 'components/search/result' ); ?>
