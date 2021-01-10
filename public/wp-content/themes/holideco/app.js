@@ -2228,7 +2228,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var postsContainer = document.querySelector(".posts-container");
   var eventsContainer = document.querySelector(".events-container");
   searchInput.addEventListener("input", function (e) {
-    return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 1000);
+    return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 500);
   });
 });
 
