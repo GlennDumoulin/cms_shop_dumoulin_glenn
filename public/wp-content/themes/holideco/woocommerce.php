@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div class="container">
+<div class="container woocommerce-container">
     <?php woocommerce_content(); ?>
 </div>
 

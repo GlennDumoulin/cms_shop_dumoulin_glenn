@@ -112,15 +112,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const postsContainer = document.querySelector(".posts-container");
     const eventsContainer = document.querySelector(".events-container");
 
-    searchInput.addEventListener("input", (e) =>
-        debounce(
-            handleSearch(
-                e.target.value,
-                pagesContainer,
-                postsContainer,
-                eventsContainer
-            ),
-            500
-        )
-    );
+    if (searchInput) {
+        searchInput.addEventListener("input", (e) =>
+            debounce(
+                handleSearch(
+                    e.target.value,
+                    pagesContainer,
+                    postsContainer,
+                    eventsContainer
+                ),
+                500
+            )
+        );
+    }
 });

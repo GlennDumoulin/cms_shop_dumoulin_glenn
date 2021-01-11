@@ -9,6 +9,7 @@
     &:hover {
         color: $color-white;
         background-color: $color-green--darker;
+        text-decoration: none;
         border-radius: 0;
     }
     &.opacity {

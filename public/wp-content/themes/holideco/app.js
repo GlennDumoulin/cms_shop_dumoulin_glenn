@@ -2227,9 +2227,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var pagesContainer = document.querySelector(".pages-container");
   var postsContainer = document.querySelector(".posts-container");
   var eventsContainer = document.querySelector(".events-container");
-  searchInput.addEventListener("input", function (e) {
-    return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 500);
-  });
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function (e) {
+      return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 500);
+    });
+  }
 });
 
 /***/ }),
