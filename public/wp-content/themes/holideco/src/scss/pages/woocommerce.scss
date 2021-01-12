@@ -13,24 +13,7 @@
         &-ordering {
             width: fit-content;
             .orderby {
-                border: 1px solid $color-green;
                 padding: 5px;
-            }
-        }
-        &-loop-product__link {
-            background-color: $color-grey;
-            border: 2px solid $color-green;
-            transition: $transition-basic;
-            h2 {
-                color: $color-green;
-                text-shadow: 2px 1px 1px $color-black--60;
-                transition: $transition-basic;
-            }
-            &:hover {
-                border-color: $color-red;
-                h2 {
-                    color: $color-red;
-                }
             }
         }
     }
@@ -38,17 +21,11 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 30px;
+        margin: 30px -12px 0;
         .product {
-            position: relative;
-            flex: 0 0 auto;
             width: 33.3333333333%;
             margin-bottom: 20px;
             padding: 0 12px;
-            & > a:hover {
-                color: $color-black;
-                text-decoration: none;
-            }
         }
     }
 }

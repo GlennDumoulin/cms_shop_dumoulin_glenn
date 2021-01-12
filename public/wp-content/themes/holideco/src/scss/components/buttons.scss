@@ -1,9 +1,11 @@
-.btn {
+.btn,
+.single_add_to_cart_button {
     color: $color-white;
     background-color: $color-green;
     width: fit-content;
     padding: 10px 20px;
     margin-top: 10px;
+    border: none;
     border-radius: 0 15px 0 15px;
     transition: $transition-basic;
     &:hover {

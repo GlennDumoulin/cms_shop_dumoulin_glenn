@@ -12,11 +12,21 @@
                     color: $color-red;
                     text-decoration: none;
                 }
+                svg {
+                    stroke: $color-white;
+                    transition: $transition-basic;
+                    &:hover {
+                        stroke: $color-red;
+                    }
+                }
             }
             &.current_page_item {
                 a {
                     color: $color-red;
                     text-decoration: underline;
+                    svg {
+                        stroke: $color-red;
+                    }
                 }
             }
         }

@@ -24,6 +24,9 @@ form {
         border: 2px solid $color-black;
         padding: 5px 10px;
     }
+    select {
+        border-color: $color-green;
+    }
     &.sent {
         .wpcf7-response-output {
             border-color: $color-green;

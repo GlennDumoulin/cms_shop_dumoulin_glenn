@@ -1,0 +1,28 @@
+.page--checkout {
+    .woocommerce-form__label {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        input {
+            margin-left: 20px;
+            width: fit-content;
+        }
+    }
+    #place_order {
+        color: $color-white;
+        background-color: $color-green;
+        width: fit-content;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 0 15px 0 15px;
+        transition: $transition-basic;
+        &:hover {
+            color: $color-white;
+            background-color: $color-green--darker;
+            text-decoration: none;
+            border-radius: 0;
+        }
+    }
+}

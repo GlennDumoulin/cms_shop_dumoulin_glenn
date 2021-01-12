@@ -8,3 +8,37 @@
         }
     }
 }
+
+.woocommerce-pagination {
+    width: 100%;
+    margin-top: 30px;
+    .page-numbers {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 20%;
+        margin: 0 auto;
+        li {
+            background-color: $color-grey;
+            border: 2px solid $color-green;
+            border-radius: 5px;
+            padding: 5px 10px;
+            transition: $transition-basic;
+            &:hover {
+                cursor: pointer;
+                a {
+                    color: $color-green;
+                    text-decoration: none;
+                }
+            }
+            span,
+            a {
+                font-size: 1.2rem;
+                &.current {
+                    color: $color-green;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
