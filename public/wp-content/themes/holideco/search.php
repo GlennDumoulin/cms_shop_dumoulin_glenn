@@ -12,7 +12,7 @@
     <?php get_search_form() ?>
 
     <div class="row result-containers">
-        <div class="col-4 pages-container">
+        <div class="col-lg-4 col-md-6 col-12 pages-container">
             <h2><?php _e('Pages', 'holideco'); ?></h2>
             <ul class="all-results">
                 <?php
@@ -31,7 +31,7 @@
                 <?php } ?>
             </ul>
         </div>
-        <div class="col-4 posts-container">
+        <div class="col-lg-4 col-md-6 col-12 posts-container">
             <h2><?php _e('Posts', 'holideco'); ?></h2>
             <ul class="all-results">
                 <?php
@@ -50,7 +50,7 @@
                 <?php } ?>
             </ul>
         </div>
-        <div class="col-4 events-container">
+        <div class="col-lg-4 col-md-6 col-12 events-container">
             <h2><?php _e('Events', 'holideco'); ?></h2>
             <ul class="all-results">
                 <?php

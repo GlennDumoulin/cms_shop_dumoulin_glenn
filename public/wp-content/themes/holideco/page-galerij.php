@@ -25,8 +25,8 @@
                 ?>
             </div>
             <?php get_template_part('components/pagination', null, array(
-                'previous_label' => 'Vorige afbeeldingen',
-                'next_label' => 'Volgende afbeeldingen',
+                'previous_label' => 'Vorige foto\'s',
+                'next_label' => 'Volgende foto\'s',
                 'items' => $gallery,
             )) ?>
         </div>

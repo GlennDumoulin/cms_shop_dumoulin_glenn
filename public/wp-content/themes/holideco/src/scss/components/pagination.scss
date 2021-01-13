@@ -17,6 +17,12 @@
         justify-content: space-evenly;
         align-items: center;
         width: 20%;
+        @media (max-width: 992px) {
+            width: 40%;
+        }
+        @media (max-width: 768px) {
+            width: 50%;
+        }
         margin: 0 auto;
         li {
             background-color: $color-grey;

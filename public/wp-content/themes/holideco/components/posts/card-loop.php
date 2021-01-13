@@ -5,7 +5,7 @@
     ));
 
     while ($loop->have_posts()) { $loop->the_post() ?>
-        <div class="col-6">
+        <div class="col-lg-6 col-12">
             <div class="card">
                 <a href="<?php the_permalink(); ?>">
                     <div class="card-img">
@@ -19,7 +19,7 @@
                             if (has_excerpt()) {
                                 the_excerpt();
                             } else {
-                                echo '<p>' . wp_trim_words(get_the_content(), 20) . '</p>';
+                                echo '<p>' . wp_trim_words(get_the_content(), 15) . '</p>';
                             }
                         ?>
                     </div>

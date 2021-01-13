@@ -2151,8 +2151,11 @@ process.umask = function() { return 0; };
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _handle_search__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./handle-search */ "./src/js/handle-search.js");
-/* harmony import */ var _open_event_detail__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./open-event-detail */ "./src/js/open-event-detail.js");
-/* harmony import */ var _open_event_detail__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_open_event_detail__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _toggle_event_detail__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toggle-event-detail */ "./src/js/toggle-event-detail.js");
+/* harmony import */ var _toggle_event_detail__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_toggle_event_detail__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _toggle_hamburger_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./toggle-hamburger-menu */ "./src/js/toggle-hamburger-menu.js");
+/* harmony import */ var _toggle_hamburger_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_toggle_hamburger_menu__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -2208,17 +2211,15 @@ var handleSearch = function handleSearch(searchValue, pagesContainer, postsConta
   });
 };
 
-var debounce = function debounce(callback, wait) {
-  var timerId;
+var debounce = function debounce(func, delay) {
+  var inDebounce;
   return function () {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    clearTimeout(timerId);
-    timerId = setTimeout(function () {
-      callback.apply(void 0, args);
-    }, wait);
+    var context = this;
+    var args = arguments;
+    clearTimeout(inDebounce);
+    inDebounce = setTimeout(function () {
+      return func.apply(context, args);
+    }, delay);
   };
 };
 
@@ -2230,17 +2231,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (searchInput) {
     searchInput.addEventListener("input", function (e) {
-      return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 2000);
+      return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 1000);
     });
   }
 });
 
 /***/ }),
 
-/***/ "./src/js/open-event-detail.js":
-/*!*************************************!*\
-  !*** ./src/js/open-event-detail.js ***!
-  \*************************************/
+/***/ "./src/js/toggle-event-detail.js":
+/*!***************************************!*\
+  !*** ./src/js/toggle-event-detail.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2250,6 +2251,28 @@ eventButtons.forEach(function (btn, i) {
   btn.addEventListener("click", function () {
     eventContentContainers[i].classList.toggle("hidden");
   });
+});
+
+/***/ }),
+
+/***/ "./src/js/toggle-hamburger-menu.js":
+/*!*****************************************!*\
+  !*** ./src/js/toggle-hamburger-menu.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var openHambBtn = document.getElementById("open-hamb-btn");
+var closeHambBtn = document.getElementById("close-hamb-btn");
+var regularMenu = document.querySelector(".regular-menu");
+var hamburgerMenu = document.querySelector(".hamburger-menu");
+openHambBtn.addEventListener("click", function () {
+  regularMenu.classList.add("hidden");
+  hamburgerMenu.classList.remove("hidden");
+});
+closeHambBtn.addEventListener("click", function () {
+  regularMenu.classList.remove("hidden");
+  hamburgerMenu.classList.add("hidden");
 });
 
 /***/ }),

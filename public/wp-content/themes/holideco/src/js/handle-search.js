@@ -96,13 +96,13 @@ const handleSearch = (
         });
 };
 
-const debounce = (callback, wait) => {
-    let timerId;
-    return (...args) => {
-        clearTimeout(timerId);
-        timerId = setTimeout(() => {
-            callback(...args);
-        }, wait);
+const debounce = (func, delay) => {
+    let inDebounce;
+    return function() {
+        const context = this;
+        const args = arguments;
+        clearTimeout(inDebounce);
+        inDebounce = setTimeout(() => func.apply(context, args), delay);
     };
 };
 
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     postsContainer,
                     eventsContainer
                 ),
-                2000
+                1000
             )
         );
     }

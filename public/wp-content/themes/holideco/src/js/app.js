@@ -1,2 +1,3 @@
 import "./handle-search";
-import "./open-event-detail";
+import "./toggle-event-detail";
+import "./toggle-hamburger-menu";

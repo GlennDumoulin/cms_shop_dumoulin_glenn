@@ -19,11 +19,22 @@
                         the_custom_logo();
                     }
                 ?>
-                <?php wp_nav_menu(array(
+                <div class="regular-menu">
+                    <?php wp_nav_menu(array(
+                            'menu' => 'header',
+                            'theme_location' => 'header-nav'
+                        ))
+                    ?>
+                    <i data-feather="menu" id="open-hamb-btn"></i>
+                </div>
+                <div class="hamburger-menu hidden">
+                    <?php wp_nav_menu(array(
                         'menu' => 'header',
                         'theme_location' => 'header-nav'
-                    ))
-                ?>
+                        ))
+                        ?>
+                    <i data-feather="x" id="close-hamb-btn"></i>
+                </div>
             </nav>
         </header>
         <main>

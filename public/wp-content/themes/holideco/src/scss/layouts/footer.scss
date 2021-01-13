@@ -13,13 +13,15 @@ footer {
                 text-decoration: none;
             }
         }
-        .contact-info {
+        .contact-info,
+        .navigation {
             a {
                 display: block;
             }
-        }
-        .navigation {
             display: block;
+            @media (max-width: 992px) {
+                margin-bottom: 10px;
+            }
         }
         .btn {
             margin-top: 10px;

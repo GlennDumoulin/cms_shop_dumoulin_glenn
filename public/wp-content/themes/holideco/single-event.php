@@ -4,6 +4,9 @@
     <h1>
         <a href="<?php echo site_url('events'); ?>"><?php _e('Events', 'holideco'); ?></a> > <?php the_title(); ?>
     </h1>
+    <h4 class="event-date">
+        <i data-feather="calendar"></i> <?php the_field('date'); ?>
+    </h4>
     <div class="event-content event-content-container">
             <p class="event-location">
                 <?php _e('Location(s):', 'holideco'); ?>

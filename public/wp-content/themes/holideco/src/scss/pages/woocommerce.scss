@@ -12,6 +12,7 @@
         }
         &-ordering {
             width: fit-content;
+            margin-right: 24px;
             .orderby {
                 padding: 5px;
             }
@@ -26,6 +27,13 @@
             width: 33.3333333333%;
             margin-bottom: 20px;
             padding: 0 12px;
+            @media (max-width: 992px) {
+                width: 50%;
+            }
+            @media (max-width: 576px) {
+                width: 70%;
+                margin: 0 auto 20px;
+            }
         }
     }
 }

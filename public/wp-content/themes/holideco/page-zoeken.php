@@ -8,9 +8,9 @@
     <?php get_search_form(); ?>
 
     <div class="row result-containers">
-        <div class="col-4 pages-container"></div>
-        <div class="col-4 posts-container"></div>
-        <div class="col-4 events-container"></div>
+        <div class="col-lg-4 col-md-6 col-12 pages-container"></div>
+        <div class="col-lg-4 col-md-6 col-12 posts-container"></div>
+        <div class="col-lg-4 col-md-6 col-12 events-container"></div>
     </div>
 </div>
 

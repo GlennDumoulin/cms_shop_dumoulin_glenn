@@ -31,4 +31,11 @@
             }
         }
     }
+    svg {
+        stroke: $color-white;
+        transition: $transition-basic;
+        &:hover {
+            stroke: $color-red;
+        }
+    }
 }

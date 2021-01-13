@@ -1,12 +1,23 @@
 .page--checkout {
-    .woocommerce-form__label {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-        input {
-            margin-left: 20px;
-            width: fit-content;
+    .woocommerce {
+        &-form__label,
+        #shipping_method li {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            input {
+                margin-left: 20px;
+                width: fit-content;
+                &.shipping-method {
+                    margin: 0;
+                    margin-left: 20px;
+                }
+            }
+            label {
+                width: fit-content;
+                margin-bottom: 0;
+            }
         }
     }
     #place_order {

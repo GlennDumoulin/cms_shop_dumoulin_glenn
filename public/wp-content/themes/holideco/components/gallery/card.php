@@ -1,4 +1,4 @@
-<div class="col-4">
+<div class="col-lg-4 col-md-6 col-12">
     <div class="gallery-item">
         <div class="gallery-item-img">
             <?php the_post_thumbnail('medium'); ?>

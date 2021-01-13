@@ -8,12 +8,24 @@
             background-color: $color-grey;
             border: 3px solid $color-green;
             width: 100%;
-            height: auto;
+            height: 375px;
             transition: $transition-basic;
+            @media (max-width: 576px) {
+                height: 325px;
+            }
+            img {
+                height: 250px;
+                @media (max-width: 576px) {
+                    height: 200px;
+                }
+            }
             h2 {
                 color: $color-green;
                 text-shadow: 2px 1px 1px $color-black--60;
                 transition: $transition-basic;
+                @media (max-width: 768px) {
+                    font-size: 1.4rem;
+                }
             }
             &:hover {
                 color: $color-black;
@@ -83,10 +95,18 @@
                 width: 100%;
             }
         }
+        @media (max-width: 768px) {
+            min-width: 100%;
+            max-width: 100%;
+        }
     }
     .summary {
         max-width: 50%;
         margin-left: 30px;
+        @media (max-width: 768px) {
+            max-width: 100%;
+            margin-left: 0;
+        }
         .stock {
             &.in-stock {
                 color: $color-green;

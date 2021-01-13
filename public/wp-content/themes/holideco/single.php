@@ -2,7 +2,7 @@
 
 <div class="container post">
     <div class="row post-info">
-        <div class="col-6 post-info--main">
+        <div class="col-md-6 col-12 post-info--main">
             <h1>
                 <a href="<?php echo site_url('nieuws'); ?>"><?php _e('News', 'holideco'); ?></a> > <?php the_title(); ?>
             </h1>
@@ -33,7 +33,7 @@
                 ?>
             </div>
         </div>
-        <div class="col-6 post-info--img">
+        <div class="col-md-6 col-12 post-info--img">
             <?php the_post_thumbnail('large'); ?>
         </div>
     </div>

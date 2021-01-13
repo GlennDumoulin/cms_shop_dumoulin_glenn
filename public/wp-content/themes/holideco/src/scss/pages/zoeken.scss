@@ -5,8 +5,12 @@
         }
         .all-results {
             list-style: disc;
+            margin: 0;
             margin-top: 10px;
-            margin-bottom: 0;
+            margin-left: 20px;
+            p {
+                margin-left: -20px;
+            }
             .result {
                 a {
                     font-size: 1.3rem;
