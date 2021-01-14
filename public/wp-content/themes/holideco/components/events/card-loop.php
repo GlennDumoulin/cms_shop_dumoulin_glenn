@@ -23,6 +23,9 @@
                 <h2 class="event-title">
                     <?php the_title(); ?> <i data-feather="chevrons-down" class="event-btn"></i>
                 </h2>
+                <noscript>
+                    <a href="<?php the_permalink(); ?>" class="btn"><?php _e('Visit event', 'holideco'); ?></a>
+                </noscript>
                 <div class="event-content event-content-container hidden">
                     <p class="event-location">
                         <?php _e('Location(s):', 'holideco'); ?> 

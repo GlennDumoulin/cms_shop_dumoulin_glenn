@@ -12245,20 +12245,30 @@ form.failed .wpcf7-response-output {
 }
 
 .product .add_to_cart_button,
-.product > .button {
+.product > .button,
+.product .added_to_cart {
   position: absolute;
   color: #fff;
   background-color: #0cb04a;
-  bottom: 0;
   right: 12px;
   padding: 5px 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .product .add_to_cart_button:hover,
-.product > .button:hover {
+.product > .button:hover,
+.product .added_to_cart:hover {
   text-decoration: none;
   background-color: #0a5326;
+}
+
+.product .add_to_cart_button,
+.product > .button {
+  bottom: 0;
+}
+
+.product .added_to_cart {
+  top: 0;
 }
 
 .product .woocommerce-product-gallery {
