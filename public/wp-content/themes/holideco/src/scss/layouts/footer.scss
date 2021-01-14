@@ -4,19 +4,26 @@ footer {
     .footer-content {
         padding: 20px 0;
         h1 {
+            color: $color-white;
             margin-bottom: 10px;
+        }
+        p {
+            color: $color-white;
         }
         a {
             color: $color-white;
+            text-decoration: underline;
             &:hover {
                 color: $color-red;
-                text-decoration: none;
             }
         }
         .contact-info,
         .navigation {
             a {
                 display: block;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
             display: block;
             @media (max-width: 992px) {

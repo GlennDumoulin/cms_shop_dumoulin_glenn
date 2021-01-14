@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     postsContainer,
                     eventsContainer
                 ),
-                1000
+                5000
             )
         );
     }

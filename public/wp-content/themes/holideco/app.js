@@ -2231,7 +2231,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (searchInput) {
     searchInput.addEventListener("input", function (e) {
-      return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 1000);
+      return debounce(handleSearch(e.target.value, pagesContainer, postsContainer, eventsContainer), 5000);
     });
   }
 });

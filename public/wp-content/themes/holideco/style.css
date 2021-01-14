@@ -12552,16 +12552,21 @@ footer .footer-content {
 
 footer .footer-content h1,
 footer .footer-content .h1 {
+  color: #fff;
   margin-bottom: 10px;
+}
+
+footer .footer-content p {
+  color: #fff;
 }
 
 footer .footer-content a {
   color: #fff;
+  text-decoration: underline;
 }
 
 footer .footer-content a:hover {
   color: #c72121;
-  text-decoration: none;
 }
 
 footer .footer-content .contact-info,
@@ -12572,6 +12577,11 @@ footer .footer-content .navigation {
 footer .footer-content .contact-info a,
 footer .footer-content .navigation a {
   display: block;
+}
+
+footer .footer-content .contact-info a:hover,
+footer .footer-content .navigation a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 992px) {
